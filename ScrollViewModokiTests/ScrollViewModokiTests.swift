@@ -1,11 +1,3 @@
-//
-//  ScrollViewModokiTests.swift
-//  ScrollViewModokiTests
-//
-//  Created by 久保田 竜自 on 2015/12/26.
-//  Copyright © 2015年 hadashikick. All rights reserved.
-//
-
 import XCTest
 @testable import ScrollViewModoki
 

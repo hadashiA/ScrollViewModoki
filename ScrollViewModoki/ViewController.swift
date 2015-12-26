@@ -1,25 +1,32 @@
-//
-//  ViewController.swift
-//  ScrollViewModoki
-//
-//  Created by 久保田 竜自 on 2015/12/26.
-//  Copyright © 2015年 hadashikick. All rights reserved.
-//
-
 import UIKit
+import SpriteKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    @IBOutlet weak var sceneView: SKView! {
+        didSet {
+            #if DEBUG
+                sceneView.showsFPS = true
+                sceneView.showsDrawCount = true
+                sceneView.showsNodeCount = true
+            #endif
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if sceneView.scene == nil {
+            let scene = ScrollViewModokiScene(size: sceneView.frame.size)
+            let pinch = UIPinchGestureRecognizer(target: scene, action: "handlePinch:")
+            let pan = UIPanGestureRecognizer(target: scene, action: "handlePan:")
+            
+            sceneView.addGestureRecognizer(pan)
+            sceneView.addGestureRecognizer(pinch)
+            sceneView.presentScene(scene)
+        }
     }
-
-
 }
-

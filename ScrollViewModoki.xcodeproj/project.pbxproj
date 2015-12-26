@@ -14,6 +14,7 @@
 		2645DFA71C2E51B90046C705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2645DFA51C2E51B90046C705 /* LaunchScreen.storyboard */; };
 		2645DFB21C2E51B90046C705 /* ScrollViewModokiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645DFB11C2E51B90046C705 /* ScrollViewModokiTests.swift */; };
 		2645DFBD1C2E51B90046C705 /* ScrollViewModokiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645DFBC1C2E51B90046C705 /* ScrollViewModokiUITests.swift */; };
+		2645DFCB1C2E535F0046C705 /* ScrollViewModokiScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645DFCA1C2E535F0046C705 /* ScrollViewModokiScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2645DFB81C2E51B90046C705 /* ScrollViewModokiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewModokiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2645DFBC1C2E51B90046C705 /* ScrollViewModokiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModokiUITests.swift; sourceTree = "<group>"; };
 		2645DFBE1C2E51B90046C705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2645DFCA1C2E535F0046C705 /* ScrollViewModokiScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewModokiScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2645DFA31C2E51B90046C705 /* Assets.xcassets */,
 				2645DFA51C2E51B90046C705 /* LaunchScreen.storyboard */,
 				2645DFA81C2E51B90046C705 /* Info.plist */,
+				2645DFCA1C2E535F0046C705 /* ScrollViewModokiScene.swift */,
 			);
 			path = ScrollViewModoki;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				2645DF9F1C2E51B80046C705 /* ViewController.swift in Sources */,
 				2645DF9D1C2E51B80046C705 /* AppDelegate.swift in Sources */,
+				2645DFCB1C2E535F0046C705 /* ScrollViewModokiScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				2645DFC31C2E51B90046C705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2645DFC41C2E51B90046C705 /* Build configuration list for PBXNativeTarget "ScrollViewModokiTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				2645DFC61C2E51B90046C705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2645DFC71C2E51B90046C705 /* Build configuration list for PBXNativeTarget "ScrollViewModokiUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				2645DFC91C2E51B90046C705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

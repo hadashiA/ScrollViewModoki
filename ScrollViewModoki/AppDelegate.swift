@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  ScrollViewModoki
-//
-//  Created by 久保田 竜自 on 2015/12/26.
-//  Copyright © 2015年 hadashikick. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
